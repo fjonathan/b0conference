@@ -1,0 +1,70 @@
+page-weather {
+
+    width: 80% !important;
+    height: 25% !important;
+    top: 30% !important;
+    left: 10% !important;
+    
+    .card-md, .card-ios {
+        box-shadow: none;
+        margin: 0;
+        width: auto;
+    }
+
+    .content-md, .content-ios {
+        border-radius: 3px;
+        background-color: #fff;
+    }
+
+    .weather {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .weather .icon, .weather .text {
+        text-align: left;
+        float: left;
+    }
+
+    .weather .text .temp {
+        font-size: 30px;
+        color: #9b59b6;
+        margin-top: 17px;
+    }
+
+    .weather .text .desc {
+        font-size: 15px;
+        font-weight: 100;
+        margin-top: 0;
+        color: #999;
+        margin-bottom: 0;
+    }
+
+    .weather .text .location {
+        color: #404040;
+        font-size: 20px;
+        font-weight: 100;
+        margin-bottom: 2px;
+    }
+
+    .close {
+        position: absolute;
+        right: 0;
+    }
+
+    .close button {
+        background: transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        color: #777;
+        padding: 0 10px;
+        font-size: 18px;
+    }
+
+    .button-md.activated, .button-ios.activated {
+        color: #9b59b6;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+}

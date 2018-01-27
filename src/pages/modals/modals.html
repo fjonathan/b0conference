@@ -1,0 +1,19 @@
+  
+  <ion-content class="no-scroll">
+    <ion-card>
+        <div class="partner-img">
+            <img *ngIf="urlAssets" src="{{urlAssets}}partners/{{partner.values.image.length ? partner.values.image : imagemPadrao }}">
+            <h2>{{partner.values.name}}</h2>
+        </div>
+      <ion-card-content>
+        <p class="partner-url">
+          {{partner.values.url}}
+        </p>
+        <div class="text" [innerHTML] = "'<p>' + partner.values.informations + '</p>'"></div>
+        
+        <div class="buttonHome">
+            <button (click)="cancel()" ion-button round>Close</button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>

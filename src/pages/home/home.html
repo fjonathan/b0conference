@@ -1,0 +1,21 @@
+<ion-header no-border>
+  <ion-navbar>
+     <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>Home</ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="no-scroll">
+  <img class="logoHome" src="assets/images/logo.png"/>
+</ion-content>
+
+<ion-footer>
+    <div class="buttonHome">
+        <button [navPush]="pushPage" ion-button round>Directions</button>
+        <button (click)="openDetail(partner)" class="weather"><ion-icon name="ios-moon"></ion-icon></button>
+    </div>
+  </ion-footer>

@@ -1,0 +1,55 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+    <div class="flb">
+      <div class="Aligner-item Aligner-item--top"></div>
+      <img src="assets/images/icon.png">
+      <div class="Aligner-item Aligner-item--bottom"></div>
+    </div>
+  </div>
+  
+  <ion-menu [content]="menu">
+      <ion-header no-border class="myMenu">
+        <ion-toolbar>
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+    
+      <ion-content>
+        <ion-list>
+          <button ion-item (click)="goHome()">
+            <ion-icon name="ios-home-outline" item-left=""></ion-icon>
+            Home
+          </button>
+          <button ion-item (click)="goSpeakers()">
+            <ion-icon name="ios-mic-outline" item-left=""></ion-icon>
+            Speakers
+          </button>
+          <button ion-item="" (click)="goSchedule()">
+            <ion-icon name="ios-clock-outline" item-left=""></ion-icon>
+            Schedule
+          </button>
+          <button ion-item (click)="goPartners()">
+            <ion-icon name="ios-people-outline" item-left=""></ion-icon>
+            Partners
+          </button>
+          <button ion-item (click)="goPresentations()">
+            <ion-icon name="ios-school-outline" item-left=""></ion-icon>
+            Presentations
+          </button>
+          <button ion-item (click)="goInvite()">
+            <ion-icon name="ios-mail-outline" item-left=""></ion-icon>
+            Invite
+          </button>
+          <button ion-item>
+            <ion-icon name="ios-albums-outline" item-left=""></ion-icon>
+            Notices
+          </button>
+          <button ion-item (click)="goInformations()">
+            <ion-icon name="ios-clipboard-outline" item-left=""></ion-icon>
+            Informations
+          </button> 
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    
+    <ion-nav [root]="rootPage" #menu></ion-nav>
+    

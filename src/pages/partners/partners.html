@@ -1,0 +1,32 @@
+<ion-header no-border>
+  
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Partners</ion-title>
+    </ion-navbar>
+
+  </ion-header>
+  
+
+  <ion-content class="no-scroll">
+
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+    
+    <ion-grid>
+        <ion-row>
+            <ion-col col-4 *ngFor="let partner of partnersList">
+                <button ion-item (click)="openDetail(partner)">
+                    <ion-thumbnail item-left>
+                      <img *ngIf="urlAssets" src="{{urlAssets}}partners/{{partner.values.image.length ? partner.values.image : imagemPadrao }}">
+                    </ion-thumbnail>
+                  </button>
+              </ion-col>
+        </ion-row>
+    </ion-grid>
+
+  </ion-content>
+  

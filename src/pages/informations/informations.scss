@@ -1,0 +1,99 @@
+page-informations {
+    
+        .content-md, .content-ios {
+            background-color: #fff;
+        }
+
+        .card-md, .card-ios {
+            box-shadow: none;
+            border-radius: 0;
+            margin: 0;
+            width: auto;
+        }
+    
+        .card-content-md img {
+            width: 200px;
+        }
+    
+        .card-md .text p, .card-ios .text p {
+            font-weight: 100;
+            color: #777;
+            font-size: 12px;
+        }
+
+        .card-md .be-booking-desc-details.informations::first-letter, .card-ios .be-booking-desc-details.informations::first-letter  { 
+            font-size: 2.4rem;
+            color: #777;
+        }
+        
+        span {
+            display: inline-block;
+        }
+
+        .card-md .informations-title, .card-ios .informations-title {
+            background-color: #ffffff;
+            border-bottom: 1px solid #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    
+        .card-md .informations-title h2, .card-ios .informations-title h2 {
+            font-weight: 100;
+            color: #777;
+            font-size: 2.4rem;
+            line-height: 1.2;
+        }
+
+
+        .card-md .informations-title h3, .card-ios .informations-title h3 {
+            font-size: 12px;
+            font-weight: 100;
+        }
+        
+
+        .buttonHome {
+            position: relative;
+            text-align: center;
+            transform:translateY(40%);
+        }
+  
+        .buttonHome button {
+          box-shadow: none;
+          background-color: #9b59b6;
+          height: 3.6rem;
+          font-size: 1.4rem;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+  
+        .buttonHome button:hover, .buttonHome button:focus, .buttonHome button:active {
+          background-color: #8646a0;
+        }
+  
+        .buttonHome .button-md.activated {
+          box-shadow: none;
+          background-color: #8646a0;
+        }
+
+        .card-md .informations-img img, .card-ios .informations-img img {
+            width: 80%;
+            text-align: center;
+            margin: 0 auto;             
+        }
+
+        .card-md .informations-img, .card-ios .informations-img {
+            margin-top: 30px;         
+        }
+
+        // landscape
+
+        @media screen and (max-height: 480px){
+        
+            .card-md .informations-img img, .card-ios .informations-img img  {
+                width: 35%;
+            }
+        
+        }
+    
+    }
+    

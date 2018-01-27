@@ -1,0 +1,27 @@
+<ion-header no-border>
+
+  <ion-navbar>
+    <ion-title>Speaker - {{carro.values.name}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+      <div class="speaker-img">
+        <img *ngIf="abab" src="{{abab}}social-entities/{{carro.values.image.length ? carro.values.image : imagemPadrao }}">
+      </div>
+    <ion-card-content>
+      <ion-card-title>
+         {{carro.values.name}}
+      </ion-card-title>
+      <p class="speaker-charge">
+       {{carro.values.charge}}
+      </p>
+      <p class="informations">
+        {{carro.values.informations}}
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

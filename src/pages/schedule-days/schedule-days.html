@@ -1,0 +1,37 @@
+<ion-header no-border>
+  
+    <ion-navbar>
+      <ion-title>Schedule Day - {{dayExt}}</ion-title>
+    </ion-navbar>
+
+    <ion-toolbar no-border-top>
+        <ion-searchbar placeholder="Search" (ionInput)="filterItems($event)"></ion-searchbar>
+      </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list>
+
+    <div class="schedule-item" *ngFor="let daysinfo of scheduleDaysInfo">
+
+        <div class="schedule-hour">
+          <p>at {{daysinfo.values.hour}}</p>
+        </div>
+        
+        <div class="pause" *ngIf="daysinfo.values.type == 'pause'">
+            <h2>{{daysinfo.values.title}}</h2>
+        </div>
+
+        <button *ngIf="daysinfo.values.type != 'pause'" ion-item (click)="openDetail(daysinfo)" >
+            <span class="bar">&nbsp;</span>
+            <h2>{{daysinfo.values.title}}</h2>
+            <p>{{daysinfo.values.local}}</p>
+        </button>
+    </div>
+    
+  </ion-list>
+
+</ion-content>

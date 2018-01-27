@@ -1,0 +1,126 @@
+page-schedule {
+
+    // Android // Default //
+
+    ion-header {
+        border: 0;
+    }
+
+    ion-navbar {
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .item {
+        margin-bottom: 10px;
+        border-radius: 3px;
+    }
+
+    ion-item .item-inner {
+        border: none !important;
+    }
+    
+    ion-thumbnail {
+        text-align: center;
+    }
+
+    ion-thumbnail ion-icon {
+        font-size: 40px;
+        color: #9b59b6;
+    }
+
+    .item-md h2, .item-ios h2 {
+        font-weight: 100;
+        color: #777;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .item-md h3, .item-ios h3 {
+        font-weight: 100;
+        color: #777;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    
+    .item-md p, .item-ios p {
+        font-weight: 100;
+        color: #777;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 10px;
+        white-space: normal;
+    }
+
+    .item-md ion-thumbnail {
+        min-height: auto;
+        min-width: auto;
+        margin-bottom: 10px;
+    }
+
+    .buttonHome {
+        text-align: center;
+        margin-top: 14px;
+    }
+
+    .buttonHome button {
+        box-shadow: none;
+        background-color: #9b59b6;
+    }
+
+    .buttonHome .button-md, .buttonHome .button-ios {
+        font-size: 11px;
+        padding: 0 1.2em;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .buttonHome button:hover, .buttonHome button:focus, .buttonHome button:active {
+        background-color: #8646a0;
+    }
+
+    .buttonHome .button-md.activated {
+        box-shadow: none;
+        background-color: #8646a0;
+    }
+    
+    .segment-md .segment-button, .segment-ios .segment-button{
+        color: #8646a0 !important;
+    }
+    .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated, .segment-ios .segment-button.activated, .segment-ios .segment-button.segment-activated {
+        border-color: #8646a0 !important;
+    }
+
+    .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+        background-image: none;
+    }
+
+    // iOS //
+
+    .segment-ios .segment-button.segment-activated {
+        background-color: transparent;
+        opacity: 1;
+    }
+
+    .segment-ios .segment-button {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        text-transform: uppercase;
+        font-weight: 500;
+        opacity: 0.7;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-color: rgba(0, 0, 0, 0.1);
+        height: 4.2rem;
+        font-size: 1.2rem;
+        line-height: 4rem;
+    }
+
+    .segment-ios .segment-button:hover:not(.segment-activated) {
+        background-color: transparent;
+    }
+    
+    .list-ios > .item-block:first-child {
+        border-top: none;
+    }
+}

@@ -1,0 +1,16 @@
+<ion-header no-border>
+
+  <ion-navbar>
+    <ion-title>PDF</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <pdf-viewer [src]="pdfSrc" 
+    [render-text]="true"
+    [original-size]="false"
+    style="display: block;"
+></pdf-viewer>
+</ion-content>

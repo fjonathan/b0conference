@@ -1,0 +1,28 @@
+<ion-content>
+
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+     <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <div class="buttonHome">
+      <button (click)="goHome()" ion-button round>Close</button>
+  </div>
+  
+
+  <ion-card *ngFor="let informations of pageInformations">
+
+    <div class="informations-img">
+        <img *ngIf="urlAssets" src="{{urlAssets}}pages/{{informations.values.image}}">
+    </div>
+
+    <div class="informations-title">
+        <h2>{{informations.values.title}}</h2>   
+        <h3>{{informations.values.name}}</h3>     
+    </div>
+
+    <ion-card-content>
+        <div class="text" [innerHTML] = "'<p>' + informations.values.text + '</p>'"></div>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>

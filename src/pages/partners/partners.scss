@@ -1,0 +1,44 @@
+page-partners {
+
+    ion-col .item-md {
+        border-radius: 3px;
+    }
+
+    ion-col .item-block .item-inner {
+        border-bottom: none !important;
+    }
+
+    ion-col .item-block img {
+        border-radius: 50%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    ion-col ion-thumbnail {
+        align-items: center;
+        align-self: center;
+        display: flex;
+    }
+
+    ion-col .item-md h2 {
+        font-size: 13px;
+        color: #404040;
+    }
+
+    ion-col .item-md p {
+        font-size: 13px;
+        color: #999;
+    }
+
+    // iOS //
+
+    .item-ios .item-inner {
+        display: none;
+    }
+    
+    .item-ios ion-thumbnail ion-img, .item-ios ion-thumbnail img {
+        width: 80px;
+        height: 80px;
+    }
+        
+}

@@ -1,0 +1,30 @@
+<ion-header no-border>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Speakers</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-list>
+    <div class="speaker-button" *ngFor="let carro of speakersList">
+        <button ion-item (click)="openDetail(carro)" >
+            <ion-thumbnail item-left>
+              <img *ngIf="urlAssets" src="{{urlAssets}}social-entities/{{carro.values.image.length ? carro.values.image : imagemPadrao }}">
+            </ion-thumbnail>
+            <h2>{{carro.values.name}}</h2>
+            <p>{{carro.values.charge}}</p>
+          </button>
+    </div>
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,47 @@
+
+<ion-header>
+
+  <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>Schedule</ion-title>
+  </ion-navbar>
+
+  <ion-segment [(ngModel)]="appType">
+    <ion-segment-button value="ProgramOne">
+      Program One
+    </ion-segment-button>
+    <ion-segment-button value="ProgramTwo">
+      Program Two
+    </ion-segment-button>
+  </ion-segment>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-list>
+    <ion-item *ngFor="let days of getItems(appType)">
+
+      <ion-thumbnail>
+          <ion-icon name="ios-calendar-outline"></ion-icon>
+      </ion-thumbnail>
+      
+      <h2>{{ days.values.title }}</h2>
+      <h3>{{ days.values.day }}</h3>
+      <p>{{ days.values.shortdescription}}</p>
+
+      <div class="buttonHome">
+          <button (click)="openDetail(days)" ion-button round>View More</button>
+      </div>
+    </ion-item>
+  </ion-list>
+
+  
+</ion-content>

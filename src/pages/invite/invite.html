@@ -1,0 +1,29 @@
+  <ion-content>
+    
+      <ion-refresher (ionRefresh)="doRefresh($event)">
+           <ion-refresher-content></ion-refresher-content>
+      </ion-refresher>
+
+      <div class="buttonHome">
+          <button (click)="goHome()" ion-button round>Close</button>
+      </div>
+      
+    
+      <ion-card *ngFor="let invite of pageInvite">
+    
+        <div class="invite-img">
+            <img *ngIf="urlAssets" src="{{urlAssets}}pages/{{invite.values.image}}">
+        </div>
+    
+        <div class="invite-title">
+            <h2>{{invite.values.title}}</h2>   
+            <h3>{{invite.values.name}}</h3>     
+        </div>
+    
+        <ion-card-content>
+            <div class="text" [innerHTML] = "'<p>' + invite.values.text + '</p>'"></div>
+        </ion-card-content>
+    
+      </ion-card>
+    </ion-content>
+    

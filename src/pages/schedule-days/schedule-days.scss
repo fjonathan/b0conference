@@ -1,0 +1,111 @@
+page-schedule-days {
+    
+    ion-header {
+        border: 0;
+    }
+
+    ion-navbar {
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    ion-toolbar {
+        border-bottom-color: rgba(0, 0, 0, 0.1);
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+    }
+
+    ion-toolbar .toolbar-background-md, ion-toolbar .toolbar-background-ios {
+        background-color: #f5f5f5;
+    }
+
+    .schedule-item {
+        margin-bottom: 20px;
+    }
+    
+    .schedule-item .schedule-hour {
+        color: #888777;
+        padding-left: 16px;
+        font-size: 11px;
+    }
+
+    .item {
+        background-color: transparent;
+        padding-right: 16px;
+    }
+
+    .list-md .item-block .item-inner, .list-ios .item-block .item-inner {
+        background-color: #fff;
+        border: none;
+        border-radius: 3px;
+        font-weight: 100;
+        padding-left: 10px;
+    }
+
+    .list-md .item-block .item-inner h2, .list-ios .item-block .item-inner h2 {
+        font-size: 14px;
+    }
+
+    .list-md .item-block .item-inner p, .list-ios .item-block .item-inner p {
+        font-size: 12px;
+    }
+
+    .list-md .item-block .item-inner .bar, .list-ios .item-block .item-inner .bar {
+        background-color: #9b59b6;
+        float: left;
+        width: 2px;
+        height: 34px;
+        margin-right: 10px;
+    }
+
+    .searchbar-md .searchbar-input, .searchbar-ios .searchbar-input {
+        border: 1px solid #e2e2e2;
+        box-shadow: none !important;
+        background-color: #fff !important;
+    }
+
+    .schedule-item .pause {
+        background-color: #9b59b6;
+        text-align: center;
+        color: #fff;
+        margin-left: 16px;
+        margin-right: 16px;
+        border-radius: 3px;
+    }
+
+    .schedule-item .pause h2{
+        font-size: 14px;
+        padding-top: 7px;
+        font-weight: normal;
+        padding-bottom: 7px;
+    }
+
+    .searchbar-md .searchbar-input {
+        font-weight: 100;
+        font-size: 14px;
+    }
+
+    // iOS //
+
+    .searchbar-ios .searchbar-input {
+        padding: 5px 55px;
+        height: auto;
+        line-height: 3.3rem;
+        font-weight: 100;
+    }
+    
+    .searchbar-ios .searchbar-search-icon {
+        left: 16px;
+        top: 15px;
+        width: 21px;
+        height: 21px;
+    }
+
+    .searchbar-ios.searchbar-left-aligned .searchbar-input {
+        padding-left: 45px;
+    }
+    
+    .item-ios[detail-push] .item-inner, button.item-ios:not([detail-none]) .item-inner, a.item-ios:not([detail-none]) .item-inner {
+        background-image: none;
+    }
+
+}

@@ -1,0 +1,81 @@
+page-home {
+    .logoHome{
+        height: 210px;
+        width: auto;
+          position:absolute;
+          left: 0;
+          right: 0;
+          margin:0 auto;
+          top:50%;
+          transform:translateY(-50%);
+      }
+
+      .buttonHome {
+          margin-bottom: 30px;
+          text-align: center;
+      }
+
+      .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+        background: none;
+    }
+
+      .buttonHome button {
+        box-shadow: none;
+        background-color: #9b59b6;
+        height: 2.6em;
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .buttonHome button:hover, .buttonHome button:focus, .buttonHome button:active {
+        background-color: #8646a0;
+    }
+
+    .buttonHome .button-md.activated {
+        box-shadow: none;
+        background-color: #8646a0;
+    }
+
+    /* weather */
+
+    .buttonHome .weather {
+        background-color: #fff;
+        color: #9b59b6;
+        border-radius: 50%;
+        width: 38px;
+        margin-bottom: 0;
+        position: relative;
+        border: 1px solid #e6e6e6;
+        top: 6px;
+        height: 37px;
+    }
+
+    button.weather:hover, button.weather:focus, button.weather:active {
+        background-color: #fff !important;
+        border-color: #9b59b6;
+    }
+
+    // landscape
+
+    @media screen and (max-height: 480px){
+        .logoHome {
+            height: 160px;
+        }
+
+        .buttonHome button {
+            padding: 0 1.6rem;
+            height: 2.6rem;
+            font-size: 1.2rem;
+        }
+
+        .buttonHome .weather {
+            height: 26px;
+            font-size: 12px;
+            width: 27px;
+            top: 5px;
+            padding: 0;
+        }
+    }
+
+}

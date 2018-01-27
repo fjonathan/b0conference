@@ -1,0 +1,16 @@
+<ion-content class="no-scroll">
+    <div class="close">
+      <button (click)="cancel()" ion-button round><ion-icon name="ios-close-outline"></ion-icon>
+      </button>
+    </div>
+    <div class="weather" *ngIf="weather">
+        <div class="icon">
+          <img src="assets/images/weather/{{dayTime}}{{weather.icon}}.png" alt="">
+        </div>
+        <div class="text">
+            <h2 class="location">{{weather.display_location.full}}</h2>
+            <h3 class="desc">{{weather.weather}}</h3>
+            <h1 class="temp">{{weather.temp_c}}&deg;</h1>
+        </div>
+    </div>
+</ion-content>
